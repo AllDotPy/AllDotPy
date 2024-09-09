@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DotPy Inc</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="DotPy is a leading tech company specializing in the creation of development tools, innovative applications, and bespoke digital solutions. We provide robust backend development, stunning web design and development, cutting-edge mobile applications, core systems and libraries development, as well as expert training and consulting services to help businesses thrive in the digital world.">
+        <!-- LINKS -->
+        <link rel="icon" href="../assets/icons/logos/logo_single.png">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/icons.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body
+        class="
+        font-lexend
+        bg-dark
+        bg-[url('../images/bg/bg.png')]
+        md:bg-[url('../images/bg/bg_tablet.png')]
+        lg:bg-[url('../images/bg/bg.png')]
+        bg-no-repeat bg-cover
+        bg-opacity-100-
+        backdrop-blur-3xl-
+        ">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- LOADER -->
+        <div
+            class='loader flex flex-col space-y-12 justify-center items-center bg-dark h-screen'>
+            <span class='font-orbitron text-light text-3xl'>Loading...</span>
+            <div class="flex flex-row space-x-2 justify-center items-center">
+                <div
+                    class='h-8 w-8 bg-primary rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                <div
+                    class='h-8 w-8 bg-primary rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+                <div class='h-8 w-8 bg-primary rounded-full animate-bounce'></div>
+            </div>
+        </div>
+
+        <main class="main hidden">
+            <header class="header top-5">
+                <!-- NAVIGATION -->
+                <nav class="relative container mx-auto p-6 z-50">
+                    <div class="flex items-center justify-between">
+
+                        <!-- LOGO -->
+                        <div class="hidden pt-2 md:block">
+                            <img
+                                class="h-20"
+                                alt
+                                src="../assets/icons/logos/dotpy_blue_transparent.png">
+                        </div>
+
+                        <!-- MOBILE LOGO -->
+                        <div class="pt-2 md:hidden">
+                            <img
+                                class="h-20"
+                                alt
+                                src="../assets/icons/logos/logo_single.png">
+                        </div>
+
+                        <!-- MENU -->
+                        <div class="hidden items-center pt-0 md:flex">
+                            <ul
+                                class="hidden flex-row items-center justify-center md:flex space-x-4">
+                                <!-- HOME -->
+                                <li class>
+                                    <a href="#hero"
+                                        class="
+                                    nav-link font-orbitron
+                                    text-primary no-underline 
+                                    hover:text-primary
+                                    font-light active
+                                ">Home</a>
+                                </li>
+
+                                <!-- ABOUT -->
+                                <li class>
+                                    <a href="#about"
+                                        class="
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    font-light
+                                ">About</a>
+                                </li>
+
+                                <!-- SERVICES -->
+                                <li class>
+                                    <a href="#services"
+                                        class="
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    font-light
+                                ">Services</a>
+                                </li>
+
+                                <!-- PRODUCTS -->
+                                <li class>
+                                    <a href="#products"
+                                        class="
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    font-light
+                                ">Products</a>
+                                </li>
+
+                                <!-- CAREERS -->
+                                <!-- <li class>
+                                <a href="#"
+                                    class=" hidden
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    ffont-light
+                                ">Careers</a>
+                            </li> -->
+
+                                <!-- COMMUNITY -->
+                                <!-- <li class>
+                                <a href="#"
+                                    class="hidden
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    font-light
+                                ">Community</a>
+                            </li> -->
+
+                                <!-- CONTACT -->
+                                <li class>
+                                    <a href="#"
+                                        class="
+                                    nav-link font-orbitron
+                                    text-gray-400 no-underline 
+                                    hover:text-primary
+                                    font-light
+                                ">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- LANGUAGE -->
+                        <div class="flex flex-row space-x-0.5 items-center">
+                            <!-- FRENCH -->
+                            <a href
+                                class="hidden py-2 px-2 pt-2 ml-6
+                                font-orbitron
+                                text-light bg-transparent 
+                                baseline md:block
+                                hover:text-primary
+                                font-light
+                        ">Français</a>
+
+                            <!-- FRENCH SM -->
+                            <a href
+                                class="py-2 px-2 pt-2 ml-6
+                                font-orbitron
+                                text-light bg-transparent 
+                                baseline font-light
+                                hover:primary
+                                md:hidden
+                        ">Fr</a>
+
+                            <!-- VERTICAL SEPARATOR -->
+                            <div class="w-0.5 h-4 bg-gray-400"></div>
+
+                            <!-- ENGLISH -->
+                            <a href
+                                class="hidden py-2 px-2 pt-2 ml-6
+                                font-orbitron
+                                text-primary bg-transparent 
+                                baseline text-sm md:block
+                                hover:primary
+                                font-light
+                        ">English</a>
+
+                            <!-- ENGLISH SM -->
+                            <a href
+                                class="py-2 px-2 pt-2 ml-6
+                                font-orbitron
+                                text-primary bg-transparent 
+                                baseline font-light
+                                hover:primary
+                                md:hidden
+                        ">En</a>
+                        </div>
+
+                        <!-- HAMBURGER MENU BUTTON -->
+                        <button id="menu-btn"
+                            class="block hamburger md:hidden focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+
+                    <!-- MOBILE MENU -->
+                    <div class="md:hidden self-center z-50">
+                        <div id="menu"
+                            class="
+                        absolute flex-col items-start 
+                        self-center py-8 mt-0 hidden
+                        space-y-6 font-bold bg-lightDark
+                        w-auto px-10 z-50
+                        left-6 right-6 drop-shadow-md">
+
+                            <!-- HOME -->
+                            <a href="#hero"
+                                class="
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary">
+                                <i
+                                    class="fa fa-home fa-lg text-primary mr-5"></i>Home
+                            </a>
+
+                            <!-- ABOUT -->
+                            <a href="#about" class="
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                                <i
+                                    class="fa fa-building fa-lg text-primary mr-5"></i>About
+                            </a>
+
+                            <!-- SERVICES -->
+                            <a href="#services" class="
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                                <i
+                                    class="fa fa-puzzle-piece fa-lg text-primary mr-5"></i>Services
+                            </a>
+
+                            <!-- PRODUCT -->
+                            <a href="#products" class="
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                                <i
+                                    class="fa fa-rocket fa-lg text-primary mr-5"></i>Products
+                            </a>
+
+                            <!-- CONTACT -->
+                            <a href="#" class="
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                                <i
+                                    class="fa fa-paper-plane-o fa-lg text-primary mr-5"></i>Contact
+                            </a>
+                            <!-- <a href="#" class="hidden
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                            <i class="fa fa-group fa-lg text-primary mr-5"></i>Community
+                        </a>
+                        <a href="#" class="hidden
+                            flex items-center
+                            font-orbitron
+                            text-accent no-underline 
+                            hover:text-primary
+                            ">
+                            <i class="fa fa-handshake-o fa-lg text-primary mr-5"></i>Careers
+                        </a> -->
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- HERO SECTION -->
+            <section id="hero"
+                class="
+                z-10 mx-4 md:mx-0">
+                
+                <div class="
+                    container flex 
+                    flex-col-reverse 
+                    mt-0 md:px-24-
+                    mx-auto
+                    baseline
+                    items-center 
+                    space-y-12
+                    space-x-12
+                    md:mt-12
+                    md:space-y-0
+                    md:flex-row">
+
+                    <!-- HERO TEXT -->
+                    <div
+                        class="
+                        reveall
+                        flex flex-col 
+                        items-center 
+                        md:items-start 
+                        mx-auto mt-12
+                        space-y-12
+                        md:w-1/2">
+
+                        <!-- EN -->
+                        <h1 class=" EN
+                        text-4xl text-accent 
+                        font-bold text-center 
+                        md:text-left font-orbitron
+                        md:text-5xl
+                        lg:text-6xl">
+                            You <span class="text-primary">Dream</span> It,<br>
+                            We <span class="text-primary">Build</span> It.
+                        </h1>
+
+                        <!-- EN -->
+                        <p
+                            class="EN text-accent text-center md:text-start lg:text-xl xl:text-2xl">
+                            <span class="text-primary">At DotPy</span>, we push
+                            the
+                            boundaries of technology to create development
+                            tools,
+                            innovative applications, and bespoke digital
+                            solutions.
+                            Our passion for excellence drives us to continuously
+                            innovate and deliver top-quality products that turn
+                            ideas into reality.
+                        </p>
+
+                        <!-- BUTTONS -->
+                        <div
+                            class="flex justify-center md:justify-start mt-4 reveall">
+                            <!-- EN BUTTON -->
+                            <a href="#contact"
+                                class="EN py-2 px-6 pt-2
+                                font-orbitron
+                                text-dark bg-primary 
+                                rounded-full baseline
+                                hover:bg-opacity-60
+                        ">Contact us</a>
+                        </div>
+                    </div>
+
+                    <!-- HERO IMAGE -->
+                    <div
+                        class="md:w-1/2 justify-end md:justify-center reveal2500l sm:mb-12">
+                        <img
+                            src="../assets/images/code.svg" alt="hero"
+                            class="w-full md:w-full mx-auto drop-shadow-2xl">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="mt-24 mx-4 md:mx-0">
+                <!-- HEADING -->
+
+                <!-- EN -->
+                <h3
+                    class="EN text-accent text-center justify-center text-4xl font-orbitron font-bold mx-4 reveal md:my-0 md:text-4xl">
+                    Who <span class="text-primary">We</span> Are ?
+                </h3>
+
+                <!-- FLEX CONTAINER -->
+                <div class="
+                    container
+                    flex flex-col 
+                    mx-auto mt-12
+                    space-y-12
+                    items-start
+                    md:space-x-24
+                    md:flex-row">
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end sm:mb-12">
+                        <img
+                            src="../assets/images/ia.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl reveal2500">
+                    </div>
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 px-4 reveal md:w-1/2">
+
+                        <!-- ITEM 1 MISSIONS -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                            ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                                ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        01
+                                    </div>
+                                    <h3
+                                        class="text-base font-bold mb-0 self-center md:hidden text-light">
+                                        Our Mission
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Our Mission
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">At DotPy</span>,
+                                    our
+                                    mission is to revolutionize the digital
+                                    world by
+                                    providing cutting-edge technological
+                                    solutions.
+                                    We are committed to helping our clients
+                                    achieve
+                                    their goals through robust development
+                                    tools,
+                                    intuitive applications, and personalized
+                                    digital
+                                    solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 2 VISIONS -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row">
+
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent">
+
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        02
+                                    </div>
+                                    <h3
+                                        class="text-base font-bold mb-0 self-center md:hidden text-light">
+                                        Our Vision
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Our Vision
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">We</span> aspire
+                                    to
+                                    be global leaders in the field of digital
+                                    technologies, inspiring and empowering
+                                    developers and businesses to innovate
+                                    without
+                                    limits. Like our model, Qt, we believe in
+                                    the
+                                    power of technology to improve lives and
+                                    transform industries.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 3 VALUES -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row">
+
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent">
+
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        03
+                                    </div>
+                                    <h3
+                                        class="text-base font-bold mb-0 self-center md:hidden text-light">
+                                        Our Values
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Our Values
+                                </h3>
+
+                                <!-- INNOVATION -->
+                                <li class="text-accent">
+                                    <span
+                                        class="text-primary font-orbitron text-sm mr-0">Innovation</span>,
+                                    <!-- <br> -->
+                                    We believe in the power of innovation to
+                                    create
+                                    unique and groundbreaking solutions.
+                                </li>
+
+                                <!-- QUALITY -->
+                                <li class="text-accent">
+                                    <span
+                                        class="text-primary font-orbitron text-sm mr-0">Quality</span>,
+                                    <!-- <br> -->
+                                    Quality is at the heart of everything we do,
+                                    from design to deployment.
+                                </li>
+
+                                <!-- COMMITMENT -->
+                                <li class="text-accent">
+                                    <span
+                                        class="text-primary font-orbitron text-sm mr-0">Commitment</span>,
+                                    <!-- <br> -->
+                                    We are dedicated to our clients' success and
+                                    to
+                                    meeting their needs.
+                                </li>
+
+                                <!-- COLLABORATION -->
+                                <li class="text-accent">
+                                    <span
+                                        class="text-primary font-orbitron text-sm mr-0">Collaboration</span>,
+                                    <!-- <br> -->
+                                    Teamwork and collaboration are essential to
+                                    achieving excellence.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section id="services" class="mt-24 mx-4 md:mx-0">
+                <!-- HEADING -->
+                <h3
+                    class="text-accent text-center justify-center text-4xl font-orbitron font-bold mx-4 reveal md:my-0 md:text-4xl">
+                    What <span class="text-primary">We Do</span> For Our Clients
+                    ?
+                </h3>
+
+                <!-- BACKEND DEVELOPMENT FLEX CONTAINER -->
+                <div class="
+                container
+                reveal
+                flex flex-col 
+                mx-auto mt-12
+                space-y-12
+                items-start
+                md:space-x-24
+                md:flex-row">
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 px-4 md:w-1/2">
+
+                        <!-- ITEM 1 -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                        ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                            ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        01
+                                    </div>
+                                    <h3
+                                        class="text-base font-orbitron font-bold mb-0 self-center md:hidden text-light">
+                                        Backend Development
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Backend Development
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">At DotPy</span>,
+                                    our
+                                    backend development services ensure that
+                                    your
+                                    applications are robust, scalable, and
+                                    secure.
+                                    We specialize in creating powerful
+                                    server-side
+                                    solutions that handle complex business
+                                    logic,
+                                    manage data efficiently, and provide
+                                    seamless
+                                    integration with front-end interfaces.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end sm:mb-12">
+                        <img
+                            src="../assets/images/dev_api.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl
+                    ">
+                    </div>
+                </div>
+
+                <!-- WED DESIGN FLEX CONTAINER -->
+                <div class="
+                container
+                flex flex-col-reverse
+                mx-auto mt-16
+                space-y-12
+                items-start
+                md:space-x-24
+                md:flex-row">
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end mt-12 mb-12 reveal">
+                        <img
+                            src="../assets/images/desktop_1.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl
+                    ">
+                    </div>
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 reveal px-4 md:w-1/2">
+
+                        <!-- ITEM 2 -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                        ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                            ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        02
+                                    </div>
+                                    <h3
+                                        class="text-base font-bold font-orbitron mb-0 self-center md:hidden text-light">
+                                        Web Design and Development
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Web Design and Development
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">Our</span> web
+                                    design
+                                    and development team creates visually
+                                    stunning
+                                    and highly functional websites tailored to
+                                    your
+                                    brand and business goals. From user-friendly
+                                    interfaces to responsive designs, we deliver
+                                    web
+                                    solutions that engage your audience and
+                                    drive
+                                    results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE DEVELOPMENT FLEX CONTAINER -->
+                <div class="
+                container
+                flex flex-col 
+                mx-auto mt-12
+                space-y-12
+                items-start
+                md:space-x-24
+                md:flex-row">
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 px-4 reveal md:w-1/2">
+
+                        <!-- ITEM 3 -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                        ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                            ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        03
+                                    </div>
+                                    <h3
+                                        class="text-base font-orbitron font-bold mb-0 self-center md:hidden text-light">
+                                        Mobile Development
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Mobile Development
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">DotPy</span>
+                                    offers
+                                    cutting-edge mobile development services to
+                                    bring your app ideas to life. Whether it's
+                                    for
+                                    iOS or Android, our experts design and
+                                    develop
+                                    intuitive, high-performance mobile
+                                    applications
+                                    that offer a seamless user experience and
+                                    meet
+                                    the unique needs of your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end reveal2500 sm:mb-12">
+                        <img
+                            src="../assets/images/mobile.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl
+                    ">
+                    </div>
+                </div>
+
+                <!-- CORE DEVELOPMENT FLEX CONTAINER -->
+                <div class="
+                container
+                flex flex-col-reverse
+                mx-auto mt-16
+                space-y-12
+                items-start
+                md:space-x-24
+                md:flex-row">
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end mt-12 reveal2500 mb-12">
+                        <img
+                            src="../assets/images/core.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl
+                    ">
+                    </div>
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 reveal px-4 md:w-1/2">
+
+                        <!-- ITEM 4 -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                        ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                            ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        04
+                                    </div>
+                                    <h3
+                                        class="text-base font-orbitron font-bold mb-0 self-center md:hidden text-light">
+                                        Core & Libraries Development
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Core & Libraries Development
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">We</span>
+                                    specialize
+                                    in the development of core systems and
+                                    libraries
+                                    that enhance the functionality and
+                                    performance
+                                    of your software. Our team creates
+                                    efficient,
+                                    reusable components that serve as the
+                                    foundation
+                                    for reliable and maintainable applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE DEVELOPMENT FLEX CONTAINER -->
+                <div class="
+                container
+                flex flex-col 
+                mx-auto mt-12
+                space-y-12
+                items-start
+                md:space-x-24
+                md:flex-row">
+
+                    <!-- TEXT CONTAINER -->
+                    <div class="flex flex-col space-y-8 reveal px-4 md:w-1/2">
+
+                        <!-- ITEM 5 -->
+                        <div
+                            class="
+                            flex flex-col
+                            space-y-3 md:space-y-0 
+                            md:space-x-6 md:flex-row
+                        ">
+                            <!-- HEADING -->
+                            <div
+                                class="
+                                rounded-full 
+                                bg-secondary 
+                                mb-4 md:mb-0
+                                md:bg-transparent
+                            ">
+                                <div class="flex items-center space-x-2">
+                                    <div
+                                        class="px-4 py-2 text-dark font-orbitron rounded-full md:py-1 bg-primary">
+                                        05
+                                    </div>
+                                    <h3
+                                        class="text-base font-bold font-orbitron mb-0 self-center md:hidden text-light">
+                                        Formations & Consulting
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class>
+                                <h3
+                                    class="hidden mb-4 text-lg font-orbitron font-bold text-light md:block">
+                                    Training & Consulting
+                                </h3>
+                                <p class="text-accent">
+                                    <span class="text-primary">DotPy</span>
+                                    provides
+                                    expert training and consulting services to
+                                    help
+                                    you stay ahead in the ever-evolving tech
+                                    landscape. Our tailored training programs
+                                    and
+                                    strategic consulting services empower your
+                                    team
+                                    with the knowledge and skills needed to
+                                    leverage
+                                    the latest technologies and best practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGE CONTAINER -->
+                    <div class="md:w-1/2 justify-end sm:mb-12">
+                        <img
+                            src="../assets/images/consulting.svg" alt="hero"
+                            class="w-full mx-auto drop-shadow-2xl reveal2500
+                    ">
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- TECH STACK SECTION -->
+            <section id="stack" class=" container mt-24 justify-center reveal mx-auto ">
+                <!-- HEADING -->
+                <h3
+                    class="text-accent text-center justify-center text-2xl reveal font-orbitron font-bold mx-4 md:my-0 md:text-4xl">
+                    What <span class="text-primary">Technologies</span> &
+                    <span class="text-primary">Tools</span> Do We Use ?
+                </h3>
+
+                <!-- FLEX CONTAINER -->
+                <div
+                    class="grid grid-cols-1 gap-0 justify-center mx-auto mt-12  md:mx-12 md:gap-4 md:grid-cols-2 lg:gap-4 lg:grid-cols-4">
+                    <!-- LANGUAGES AND LIBRARIES -->
+                    <div
+                        class="flex flex-col space-y-4 bg-lightGrays rounded-3xl reveal p-4 items-center justify-center">
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold mx-4 md:my-0 md:text-xl">
+                            <span class="text-primary">L</span>anguages
+                            <!-- <span class="text-primary">L</span>ibraries -->
+                        </h4>
+
+                        <div class="grid grid-rows-2 grid-flow-col gap-3">
+                            <!-- PYTHON -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-0 items-center justify-center">
+                                <img src="../assets/icons/softwares/py.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- HTML -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/html.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- C++ -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/cpp.svg"
+                                    alt="html" class="mx-auto my-auto">
+                            </div>
+
+                            <!-- CSS -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/css.svg"
+                                    alt="html" class="mx-auto my-auto">
+                            </div>
+
+                            <!-- DART -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/dart.svg"
+                                    alt="html" class="mx-auto my-auto">
+                            </div>
+
+                            <!-- JAVASCRIPT -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/js.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- TYPESCRIPT -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/ts.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- PHP -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/php.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FRAMEWORKS -->
+                    <div
+                        class="flex flex-col space-y-4 bg-lightGrays rounded-3xl reveal2500 p-4 items-center justify-center">
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold mx-4 md:my-0 md:text-xl">
+                            <span class="text-primary">F</span>rameworks
+                        </h4>
+
+                        <div
+                            class="grid grid-rows-2 grid-flow-col gap-3 self-center">
+                            <!-- ANGULAR -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/angular.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- DJANGO -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/django.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- TAILWIND -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img
+                                    src="../assets/icons/softwares/tailwind.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- LARAVEL -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/laravel.svg"
+                                    alt="html" class="mx-auto self-baseline">
+                            </div>
+
+                            <!-- BOOTSTRAP -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img
+                                    src="../assets/icons/softwares/bootstrap.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- QT -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/qt.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- FLUTTER -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/flutter.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- REACT -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/py.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEV TOOLS -->
+                    <div
+                        class="flex flex-col space-y-4 bg-lightGrays rounded-3xl reveal2750 p-4 items-center justify-center">
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold mx-4 md:my-0 md:text-xl">
+                            <span class="text-primary">D</span>ev <span
+                                class="text-primary">T</span>ools
+                        </h4>
+
+                        <div
+                            class="grid grid-rows-2 grid-flow-col gap-3 self-center">
+                            <!-- VSCODE -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/vscode.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- DOCKER -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/docker.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- GIT -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/git.svg"
+                                    alt="html" class="auto mx-auto">
+                            </div>
+
+                            <!-- KUBERNET -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img
+                                    src="../assets/icons/softwares/kubernet.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- ATLASSIAN -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img
+                                    src="../assets/icons/softwares/atlassian.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- CLOUDFLARE -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img
+                                    src="../assets/icons/softwares/cloudflare.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- POSTMAN -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/postman.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- LINUX -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/linux.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESIGN TOOLS -->
+                    <div
+                        class="flex flex-col space-y-4 bg-lightGrays rounded-3xl reveal3000 p-4 items-center justify-center">
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold mx-4 md:my-0 md:text-xl">
+                            <span class="text-primary">D</span>esign <span
+                                class="text-primary">T</span>ools
+                        </h4>
+
+                        <div class="grid grid-rows-2 grid-flow-col gap-3">
+                            <!-- FIGMA -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-4 items-center justify-center">
+                                <img src="../assets/icons/softwares/figma.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- ADOBE -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/adobe.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- GIMP -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/gimp.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- BLENDER -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/blender.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- CANVA -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/canvas.svg"
+                                    alt="canva" class="mx-auto">
+                            </div>
+
+                            <!-- HTML -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/py.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- HTML -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/py.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+
+                            <!-- HTML -->
+                            <div
+                                class="flex bg-lightGray rounded-lg dropshadow-lg w-16 h-16 p-3 items-center justify-center">
+                                <img src="../assets/icons/softwares/py.svg"
+                                    alt="html" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRODUCTS SECTION -->
+            <section id="products" class="mt-24 reveal mx-4 md:mx-0">
+                <!-- HEADING -->
+                <h3
+                    class="text-accent text-center justify-center text-2xl reveal font-orbitron font-bold mx-4 md:my-0 md:text-4xl">
+                    Some <span class="text-primary">Products</span>
+                    <span class="text-primary">We</span> Built
+                </h3>
+
+                <!-- PROJECTS CONTAINER -->
+                <div
+                    class="container grid grid-cols md:grid-cols-4 gap-4 mt-12 px-4 mx-auto">
+                    <!-- PRODUCT 1 -->
+                    <div class="
+                    flex flex-col 
+                    items-center 
+                    w-full h-full 
+                    justify-center 
+                    my-6 mx-auto 
+                    rounded-md
+                    space-y-2 
+                    bg-lightGray">
+
+                        <!-- IMAGE CONTAINER -->
+                        <div
+                            class="
+                        flex items-center
+                        justify-end
+                        w-20 h-20 rounded-full
+                        overflow-clip
+                        bg-secondaryy
+                        ">
+
+                            <!-- IMAGE -->
+                            <img
+                                src="../assets/images/products/dotpy/logo_single.png"
+                                alt="hero"
+                                class="w-full
+                        ">
+                        </div>
+
+                        <!-- PROJECT NAME -->
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold">
+                            <span class="text-primary"></span>AllDotPy
+                            <!-- <span class="text-primary">L</span>ibraries -->
+                        </h4>
+
+                        <!-- DESCRIPTION -->
+                        <p
+                            class="mx-2 text-center tesxt-sm text-accent md:text-start-">
+                            DotPy Inc Website.
+                        </p>
+
+                        <!-- LINKS -->
+                        <div class="flex flex-row p-2 space-x-3">
+
+                            <!-- GITHUB -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div
+                            class="flex justify-center md:justify-start mt-4">
+                            <!-- BUTTON -->
+                            <a href
+                                class="py-2 px-6 pt-2
+                                text-dark bg-primary 
+                                rounded-full baseline
+                                hover:bg-opacity-60
+                        ">View Project</a>
+                        </div>
+
+                        <!-- VISIT PROECT BUTTON -->
+                    </div>
+
+                    <!-- PRODUCT 2 -->
+                    <div class="
+                    flex flex-col 
+                    items-center 
+                    w-full h-full 
+                    justify-center 
+                    my-6 mx-auto 
+                    rounded-md
+                    space-y-2 
+                    bg-lightGray">
+
+                        <!-- IMAGE CONTAINER -->
+                        <div
+                            class="
+                        flex items-center
+                        justify-end
+                        w-20 h-20 rounded-full
+                        bg-secondary
+                        overflow-clip
+                        ">
+
+                            <!-- IMAGE -->
+                            <img
+                                src="../assets/images/products/kvscode/KvStudio.png"
+                                alt="hero"
+                                class="w-full
+                        ">
+                        </div>
+
+                        <!-- PROJECT NAME -->
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold">
+                            <span class="text-primary"></span>KvsCode
+                            <!-- <span class="text-primary">L</span>ibraries -->
+                        </h4>
+
+                        <!-- DESCRIPTION -->
+                        <p
+                            class="mx-2 text-center tesxt-sm text-accent md:text-start-">
+                            Development studio for kivymd.
+                        </p>
+
+                        <!-- LINKS -->
+                        <div class="flex flex-row p-2 space-x-3">
+
+                            <!-- GITHUB -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div
+                            class="flex justify-center md:justify-start mt-4">
+                            <!-- BUTTON -->
+                            <a href
+                                class="py-2 px-6 pt-2
+                                text-dark bg-primary 
+                                rounded-full baseline
+                                hover:bg-opacity-60
+                        ">View Project</a>
+                        </div>
+
+                        <!-- VISIT PROECT BUTTON -->
+                    </div>
+
+                    <!-- PRODUCT 3 -->
+                    <div class="
+                    flex flex-col 
+                    items-center 
+                    w-full h-full 
+                    justify-center 
+                    my-6 mx-auto 
+                    rounded-md
+                    space-y-2 
+                    bg-lightGray">
+
+                        <!-- IMAGE CONTAINER -->
+                        <div
+                            class="
+                        flex items-center
+                        justify-end
+                        h-20 rounded-full
+                        bg-secondary-
+                        overflow-clip-
+                        ">
+
+                            <!-- IMAGE -->
+                            <img
+                                src="../assets/icons/logos/Learnia_gradient_text.png"
+                                alt="hero"
+                                class="w-auto h-14
+                        ">
+                        </div>
+
+                        <!-- PROJECT NAME -->
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold">
+                            <span class="text-primary"></span>Learnia
+                            <!-- <span class="text-primary">L</span>ibraries -->
+                        </h4>
+
+                        <!-- DESCRIPTION -->
+                        <p
+                            class="mx-2 text-center tesxt-sm text-accent md:text-start-">
+                            Educative AI assistant App for students.
+                        </p>
+
+                        <!-- LINKS -->
+                        <div class="flex flex-row p-2 space-x-3">
+
+                            <!-- GITHUB -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div
+                            class="flex justify-center md:justify-start mt-4">
+                            <!-- BUTTON -->
+                            <a href
+                                class="py-2 px-6 pt-2
+                                text-dark bg-primary 
+                                rounded-full baseline
+                                hover:bg-opacity-60
+                        ">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 4 -->
+                    <div class="
+                    flex flex-col 
+                    items-center 
+                    w-full h-full 
+                    justify-center 
+                    my-6 mx-auto 
+                    rounded-md
+                    space-y-2 
+                    bg-lightGray">
+
+                        <!-- IMAGE CONTAINER -->
+                        <div
+                            class="
+                        flex items-center
+                        justify-end
+                        w-20 h-20 rounded-full
+                        bg-secondary
+                        overflow-clip
+                        ">
+
+                            <!-- IMAGE -->
+                            <img
+                                src="../assets/images/products/kvscode/KvStudio.png"
+                                alt="hero"
+                                class="w-full
+                        ">
+                        </div>
+
+                        <!-- PROJECT NAME -->
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold">
+                            <span class="text-primary"></span>CinetPay SDK
+                            <!-- <span class="text-primary">L</span>ibraries -->
+                        </h4>
+
+                        <!-- DESCRIPTION -->
+                        <p
+                            class="mx-2 text-center tesxt-sm text-accent md:text-start-">
+                            Python SDK for CinetPay Payment API.
+                        </p>
+
+                        <!-- LINKS -->
+                        <div class="flex flex-row p-2 space-x-3">
+
+                            <!-- GITHUB -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+
+                            <!-- OTHER -->
+                            <div class="flex-shrink-0 h-6">
+                                <img src="../assets/icons/softwares/github.svg"
+                                    alt="Logo partenaire 1" class="h-6" />
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div
+                            class="flex justify-center md:justify-start mt-4">
+                            <!-- BUTTON -->
+                            <a href
+                                class="py-2 px-6 pt-2
+                                text-dark bg-primary 
+                                rounded-full baseline
+                                hover:bg-opacity-60
+                        ">View Project</a>
+                        </div>
+
+                        <!-- VISIT PROECT BUTTON -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="mt-24 reveal mx-4 md:mx-0">
+                <!-- HEADING -->
+                <h3
+                    class="text-accent text-center justify-center text-2xl reveal font-orbitron font-bold mx-4 md:my-0 md:text-4xl">
+                    Contact <span class="text-primary">Us</span>
+                    <span class="text-primary"></span>
+                </h3>
+
+                <!-- FORM CONTAINER -->
+                <div class="
+                    container flex 
+                    flex-col space-y-6 
+                    justify-center 
+                    items-start mt-12
+                    mx-auto
+                    md:flex-row 
+                    md:space-y-0 
+                    md:space-x-12">
+
+                    <div
+                        class="flex flex-col space-y-4 justify-center items-center w-full md:w-1/2">
+                        <!-- HEADING -->
+                        <h4
+                            class="text-accent text-center justify-center text-lg font-orbitron font-bold">
+                            <span class="text-primary">N</span>eed a
+                            <span class="text-primary">S</span>ervice ?
+                        </h4>
+
+                        <p
+                            class="text-gray-400 text-center md:text-start lg:text-xl xl:text-2xl">
+                            <!-- <span class="text-primary">Lorem</span>  -->
+                            Do you have an idea, project, or question? Our team
+                            is
+                            here to help. Contact us today to discover how DotPy
+                            can
+                            turn your vision into reality.
+                        </p>
+                    </div>
+
+                    <!-- FORM CONTAINER -->
+                    <div
+                        class="flex flex-col space-y-4 items-start w-full md:w-1/2">
+                        <div class="flex flex-row space-x-4 w-full">
+
+                            <!-- EMAIL INPUT -->
+                            <input
+                                type="email"
+                                name
+                                id
+                                placeholder="📧 Your email goes here"
+                                class="outline-none h-12 bg-lightDark text-accent rounded-lg px-4 w-1/2">
+
+                            <!-- PHONE INPUT -->
+                            <input
+                                type="tel"
+                                name
+                                id
+                                placeholder="☎️ Your phone number goes here"
+                                class="w-1/2 outline-none h-12 bg-lightDark text-accent rounded-lg px-4">
+                        </div>
+
+                        <!-- OBJECT INPUT -->
+                        <input
+                            type="text"
+                            name
+                            id
+                            placeholder="💌 Your object goes here"
+                            class="w-full outline-none h-12 bg-lightDark text-accent rounded-lg px-4">
+
+                        <!-- MESSAGE INPUT -->
+                        <textarea
+                            name
+                            id
+                            cols="30"
+                            class="w-full outline-none h-48 bg-lightDark text-accent rounded-lg p-4">Tell us about your project 😀</textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="bg-gray-900 flex flex-col space-y-2 mt-12">
+                <div
+                    class="
+                container flex flex-col-reverse
+                justify-between px-6 py-10 
+                mx-auto space-y-8 md:flex-row 
+                md:space-y-0 md:space-x-12">
+
+                    <!-- LOGO AND SOCIAL MEDIAS -->
+                    <div class="
+                    flex flex-col-reverse
+                    items-center justify-between 
+                    space-y-4 md:flex-col h-full
+                    md:space-y-12 md:items-center">
+
+                        <!-- COPYRIGHT -->
+                        <!-- <p class="text-lightGray md:hidden mt-4">CopyRight &copy;
+                        2024 All Right reserved</p> -->
+
+                        <!-- LOGO -->
+                        <div class="mb-2 items-center">
+                            <img
+                                src="../assets/icons/logos/dotpy_blue_transparent.png"
+                                alt
+                                class="h-16">
+                        </div>
+
+                        <!-- SOCIAL MEDIAS -->
+                        <div class="
+                        w-auto
+                        flex flex-row
+                        space-x-4">
+
+                            <!-- SOCIAL 1 -->
+                            <a href class="hover:text-primary">
+                                <i
+                                    class="fa fa-github fa-lg text-light hover:text-primary"></i>
+                            </a>
+
+                            <!-- SOCIAL 2 -->
+                            <a href class="hover:text-primary">
+                                <i
+                                    class="fa fa-facebook fa-lg text-light hover:text-primary"></i>
+                            </a>
+
+                            <!-- SOCIAL 3 -->
+                            <a href class="hover:text-primary">
+                                <i
+                                    class="fa fa-twitter fa-lg text-light hover:text-primary"></i>
+                            </a>
+
+                            <!-- SOCIAL 3 -->
+                            <a href class="hover:text-primary">
+                                <i
+                                    class="fa fa-linkedin fa-lg text-light hover:text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LIST CONTAINER -->
+                    <div class="flex justify-around space-x-32">
+                        <!-- LIST 1 -->
+                        <div class="flex flex-col space-y-3 text-light">
+                            <h3
+                                class="font-bold font-orbitron text-primary text-xl">DotPy</h3>
+                            <a href class="hover:text-primary">Our story</a>
+                            <a href class="hover:text-primary">Brand</a>
+                            <a href class="hover:text-primary">News</a>
+                            <a href class="hover:text-primary">Sponsors</a>
+                            <a href class="hover:text-primary">Careers</a>
+                            <a href class="hover:text-primary">Community</a>
+                        </div>
+
+                        <!-- LIST 2 -->
+                        <div class="flex flex-col space-y-3 text-light">
+                            <h3
+                                class="font-bold font-orbitron text-primary text-xl">Custom
+                                Links</h3>
+                            <a href="#hero" class="hover:text-primary">Home</a>
+                            <a href="#about"
+                                class="hover:text-primary">About</a>
+                            <a href="#services"
+                                class="hover:text-primary">Services</a>
+                            <a href="#products"
+                                class="hover:text-primary">Products</a>
+                            <a href="#contact"
+                                class="hover:text-primary">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- NEWS LETTER -->
+                    <div class="flex flex-col space-y-3 text-light">
+                        <h3
+                            class="font-bold font-orbitron text-primary text-xl">Newsletter</h3>
+                        <p class="text-sm">Get the latest news and updates</p>
+                        <div
+                            class="flex flex-row space-x-0 bg-dark rounded-full px-1 py-1">
+                            <input
+                                class="
+                            w-full h-12 rounded-3xl pl-4
+                            focus:border-none bg-dark
+                            focus:outline-none
+                            text-light
+                            "
+                                type="email"
+                                placeholder="Enter your email" />
+                            <button
+                                class="bg-primary text-dark rounded-full px-4 py-2 hover:opacity-80">
+                                Subscribe
+                            </button>
+                        </div>
+
+                        <!-- COPYRIGHT -->
+                        <p class="hidden text-dark md:block mt-32">Made with
+                            &hearts; DotPy Inc</p>
+                    </div>
+
+                </div>
+
+                <!-- SOCIAL LINKS CONTAINER -->
+                <div class="
+                flex justify-center 
+                items-center py-2
+                space-x-4 mb-2 h-12
+                bg-gray-950">
+
+                    <!-- COPYRIGHT -->
+                    <p class=" text-lightDark md:block">CopyRight
+                        &copy; DotPy Inc 2024 All Right reserved</p>
+                </div>
+            </footer>
+
+        </main>
+
+        <script src="../assets/js/main.js" async defer></script>
+        <script type="text/javascript">
+            window.addEventListener('load', function () {
+                document.querySelector('.loader').style.display = 'none';
+                document.querySelector('.main').classList.remove('hidden');
+              });
+        </script>
+    </body>
+</html>
