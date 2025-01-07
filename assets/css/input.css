@@ -18,53 +18,53 @@
   }
 
 
-.reveal {
+/* .reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
-}
+} */
 
-.reveal.active {
+/* .reveal.active {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
-.reveal2500 {
+/* .reveal2500 {
     position: relative;
     transform: translateY(200px);
     opacity: 0;
     transition: 2.5s all ease;
-}
+} */
 
-.reveal2500.active {
+/* .reveal2500.active {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
-.reveal2750 {
+/* .reveal2750 {
     position: relative;
     transform: translateY(225px);
     opacity: 0;
     transition: 2.7s all ease;
-}
+} */
 
-.reveal2750.active {
+/* .reveal2750.active {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
-.reveal3000 {
+/* .reveal3000 {
     position: relative;
     transform: translateY(250px);
     opacity: 0;
     transition: 3s all ease;
-}
+} */
 
-.reveal3000.active {
+/* .reveal3000.active {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
 /* HOMBUGER MENU */
 .hamburger {
@@ -111,4 +111,28 @@
 
 .open .hamburger-bottom{
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f9b70eff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F9B60EE4;
+}
+
+/* FIREFOX */
+* {
+    scrollbar-width: none; /* "auto", "thin", ou "none" */
+    scrollbar-color: #f9b70eff #1f2937; /* Couleur du pouce et de l'arrière-plan */
 }
